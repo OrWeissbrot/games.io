@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.option-btn {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    color: white;
+}
+
+.option-btn:hover {
+    transform: scale(1.05);
+}
+
+#restart {
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    color: white;
+}
+
+.flash-red {
+    animation: flashRed 0.5s ease-in-out;
+}
+
+@keyframes flashRed {
+    0% { background-color: rgba(255, 0, 0, 0.5); }
+    100% { background-color: transparent; }
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
