@@ -5,31 +5,45 @@ body {
     text-align: center;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .game-container {
     background: rgba(255, 255, 255, 0.1);
     width: 90%;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
 
+/* הגדלת גודל המילה הקשה */
+#word-hard {
+    font-size: 32px;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+/* התאמת הכפתורים למובייל */
 button {
-    padding: 10px;
-    font-size: 18px;
+    padding: 12px;
+    font-size: 20px;
+    width: 90%;
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    margin: 10px;
+    margin: 10px auto;
+    display: block;
 }
 
 .option-btn {
     background: linear-gradient(45deg, #ff9800, #ff5722);
     color: white;
+    font-size: 18px;
 }
 
 .option-btn:hover {
@@ -39,10 +53,11 @@ button {
 #restart {
     background: linear-gradient(45deg, #4CAF50, #2E7D32);
     color: white;
+    font-size: 20px;
 }
 
 .flash-red {
-    animation: flashRed 0.5s ease-in-out;
+    animation: flashRed 2.5s ease-in-out;
 }
 
 @keyframes flashRed {
